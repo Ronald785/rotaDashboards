@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="assets/styles/styles.css">
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+</head>
+<body>
+
+    <input type="checkbox" id="sidebar-toggle">
+
+    <div class="sidebar">
+        <div class="sidebar-brand">
+            <div class="brand-flex">
+                <span class="las la-toggle-on"></span>
+
+                <div class="brand-icons">
+                    <span class="las la-bell"></span>
+                    <span class="las la-user-circle"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="sidebar-main">
+            <div class="sidebar-user">
+                <img src="https://avatars.githubusercontent.com/u/65602274?v=4" alt="Ronald-photo">
+                <div>
+                    <h3>Ronald Mateus</h3>
+                    <span>ronaldmateus785@gmail.com</span>
+                </div>
+            </div>
+
+            <div class="sidebar-menu">
+                <div class="menu-head">
+                    <span>Dashboard</span>
+                </div>
+                <ul>
+                    <li>
+                        <a href="index.html">
+                            <span class="las la-chart-line"></span>
+                            Dashboard
+                        </a>
+                    </li>
+                    <li>
+                        <a href="assets/views/graphics.html">
+                            <span class="las la-chart-bar"></span>
+                            Gráficos
+                        </a>
+                    </li>
+                    <li>
+                        <a href="assets/views/team.html">
+                            <span class="las la-user-friends"></span>
+                            Equipe
+                        </a>
+                    </li>
+                    <li>
+                        <a href="assets/views/report.html">
+                            <span class="las la-envelope"></span>
+                            E-mail
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <header>
+            <div class="menu-toggle">
+                <label for="sidebar-toggle">
+                    <span class="las la-bars"></span>
+                </label>
+            </div>
+
+            <div class="header-icons">
+                <span class="las la-search"></span>
+                <span class="las la-bookmark"></span>
+                <span class="las la-sms"></span>
+            </div>
+        </header>
+
+        <main>
+            <div class="page-header">
+                <div>
+                    <h1>Análise Dashboard</h1>
+                    <small>Monitoração das principais métricas</small>
+                </div>
+            
+                <div class="header-actions">
+                    <button onclick="imprimir('main')">
+                        <span class="las la-download"></span>
+                        Exportar
+                    </button>
+                    <button>
+                        <span class="las la-tools"></span>
+                        Configurações
+                    </button>
+                </div>
+            </div>
+
+            <div class="cards">
+                <div class="card-single">
+                    <div class="card-flex">
+                        <div class="card-info">
+                            <div class="card-head">
+                                <span>Crescimento de vendas</span>
+                                <small>Porcentagem do crescimento</small>
+                            </div>
+
+                            <h2>R$75.000</h2>
+
+                            <small>5% mais que o mes anterior</small>
+                        </div>
+                        <div class="card-chart sucess">
+                            <span class="las la-chart-line"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-single">
+                    <div class="card-flex">
+                        <div class="card-info">
+                            <div class="card-head">
+                                <span>Vendas</span>
+                                <small>Numero de vendas no mês</small>
+                            </div>
+
+                            <h2>4.523</h2>
+
+                            <small>7%  mais queo o mês anterior</small>
+                        </div>
+                        <div class="card-chart sucess">
+                            <span class="las la-shopping-cart"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-single">
+                    <div class="card-flex">
+                        <div class="card-info">
+                            <div class="card-head">
+                                <span>Lucro</span>
+                                <small>Valor lucrado</small>
+                            </div>
+
+                            <h2>R$167.085</h2>
+
+                            <small>5%  mais queo o mês anterior</small>
+                        </div>
+                        <div class="card-chart yellow">
+                            <span class="las la-money-bill-wave"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="jobs-grid">
+                <div class="analytics-card">
+                    <div class="analytics-head">
+                        <h3>Estoque</h3>
+
+                        <span class="las la-ellipsis-h"></span>
+                    </div>
+
+                    <div class="analytics-chart">
+                        <div class="chart-circle">
+                            <h1>74%</h1>
+                        </div>
+
+                        <div class="analytics-note">
+                            <small>Porcentagem do estoque da loja</small>
+                        </div>
+                    </div>
+
+                    <div class="analytics-btn">
+                        <button>Expandir</button>
+                    </div>
+                </div>
+
+                <div class="jobs">
+                    <h2>Últimas Vendas <small>ver todas <span class="las la-arrow-right"></span></small></h2>
+                    
+                    <div class="table-responsive">
+                     
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <label for="sidebar-toggle" class="body-label"></label>
+    <!-- <div id="myBtn"></div> -->
+     <!-- Modal -->
+     <div id="myModal" class="modal">
+        <!-- Conteúdo -->
+        <div class="modal-content">
+        <div class="modal-header">
+            <span class="close">&times;</span>
+            <h2>Pedido: </h2>
+        </div>
+        <div class="modal-body">
+            <p>Item: Roupa</p>
+            <p>Quantidade: 1</p>
+            <p>Comprador: Ronald</p>
+            <p>Data: 18/04/2022</p>
+            <p>Endeço: Rua Fernando de Ribeiro</p>
+        </div>
+        </div>
+    </div>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

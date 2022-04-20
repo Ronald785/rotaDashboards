@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+</head>
+<style>
+    .card-single {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+</style>
+<body>
+
+    <input type="checkbox" id="sidebar-toggle">
+
+    <div class="sidebar">
+        <div class="sidebar-brand">
+            <div class="brand-flex">
+                <span class="las la-toggle-on"></span>
+
+                <div class="brand-icons">
+                    <span class="las la-bell"></span>
+                    <span class="las la-user-circle"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="sidebar-main">
+            <div class="sidebar-user">
+                <img src="https://avatars.githubusercontent.com/u/65602274?v=4" alt="Ronald-photo">
+                <div>
+                    <h3>Ronald Mateus</h3>
+                    <span>ronaldmateus785@gmail.com</span>
+                </div>
+            </div>
+
+            <div class="sidebar-menu">
+                <div class="menu-head">
+                    <span>Dashboard</span>
+                </div>
+                <ul>
+                    <li>
+                        <a href="../../index.html">
+                            <span class="las la-chart-line"></span>
+                            Dashboard
+                        </a>
+                    </li>
+                    <li>
+                        <a href="graphics.html">
+                            <span class="las la-chart-bar"></span>
+                            Gráficos
+                        </a>
+                    </li>
+                    <li>
+                        <a href="team.html">
+                            <span class="las la-user-friends"></span>
+                            Equipe
+                        </a>
+                    </li>
+                    <li>
+                        <a href="report.html">
+                            <span class="las la-envelope"></span>
+                            E-mail
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <header>
+            <div class="menu-toggle">
+                <label for="sidebar-toggle">
+                    <span class="las la-bars"></span>
+                </label>
+            </div>
+
+            <div class="header-icons">
+                <span class="las la-search"></span>
+                <span class="las la-bookmark"></span>
+                <span class="las la-sms"></span>
+            </div>
+        </header>
+
+        <main>
+            <div class="page-header">
+                <div>
+                    <h1>Equipe do Dashboard</h1>
+                    <small>Informações de contato dos desenvolvedores</small>
+                </div>
+            </div>
+
+            <div class="cards">
+                <div class="card-single">
+                    <img src="https://avatars.githubusercontent.com/u/65602274?v=4" width="100px;" alt="" style="border-radius:50%"/>
+                    <h1>Ronald Almeida</h1>
+                    <div class="info-person">
+                        <h3>Contate-me</h3>
+                        <a href="https://github.com/Ronald785" target="_blank">
+                            <img src="https://img.icons8.com/material-outlined/24/000000/github.png"/>
+                        </a>
+                        <a href="https://www.linkedin.com/in/ronald785/" target="_blank">
+                            <img src="https://img.icons8.com/material-outlined/24/000000/linkedin--v1.png"/>
+                        </a>
+                        <a href="https://www.instagram.com/rndmateus/" target="_blank">
+                            <img src="https://img.icons8.com/material-outlined/24/000000/instagram-new--v1.png"/>
+                        </a>
+                        <a href="mailto:ronaldmateus785@gmail.com" target="_blank">
+                            <img src="https://img.icons8.com/material-outlined/24/000000/gmail-login.png"/>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card-single">
+                    <img src="https://media-exp1.licdn.com/dms/image/C5603AQG-3JQvL19EXA/profile-displayphoto-shrink_400_400/0/1569024681436?e=1655942400&v=beta&t=3o2aAIevhP2uXQEnhYgkb8UzQNY2RHXhQElO9-UD6b4" width="100px;" alt="" style="border-radius:50%"/>
+                    <h1>Marcos Ota</h1>
+                    <div class="info-person">
+                        <h3>Contate-me</h3>
+                        <a href="" target="_blank">
+                            <img src="https://img.icons8.com/material-outlined/24/000000/github.png"/>
+                        </a>
+                        <a href="" target="_blank">
+                            <img src="https://img.icons8.com/material-outlined/24/000000/linkedin--v1.png"/>
+                        </a>
+                        <a href="" target="_blank">
+                            <img src="https://img.icons8.com/material-outlined/24/000000/instagram-new--v1.png"/>
+                        </a>
+                        <a href="" target="_blank">
+                            <img src="https://img.icons8.com/material-outlined/24/000000/gmail-login.png"/>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <label for="sidebar-toggle" class="body-label"></label>
+    
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

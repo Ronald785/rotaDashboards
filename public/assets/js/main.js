@@ -57,7 +57,7 @@ function pessoasJson() {
 }
 
 function faturasJson() {
-  let url = "https://rotadashboard-default-rtdb.firebaseio.com/fatura.json";
+  let url = "https://rotadashboards-default-rtdb.firebaseio.com/fatura.json";
 
   fetch(url).then(response => response.json())
   .then(faturas => {
@@ -144,7 +144,7 @@ function createTable(jsonFatura) {
 }
 
 function openModal(cpfPessoa) {
-    let urlPessoas = "https://rotadashboard-default-rtdb.firebaseio.com/pessoas.json";
+    let urlPessoas = "https://rotadashboards-default-rtdb.firebaseio.com/pessoas.json";
 
     fetch(urlPessoas).then(response => response.json())
     .then(pessoas => {

@@ -40,7 +40,7 @@ window.onclick = function(event) {
 }
 
 function pessoasJson() {
-    let url = "https://rotadashboard-default-rtdb.firebaseio.com/pessoas.json";
+    let url = "https://rotadashboards-default-rtdb.firebaseio.com/pessoas.json";
 
     fetch(url).then(response => response.json())
     .then(pessoas => {
@@ -57,7 +57,7 @@ function pessoasJson() {
 }
 
 function faturasJson() {
-  let url = "https://rotadashboards-default-rtdb.firebaseio.com/fatura.json";
+  let url = "https://rotadashboards-default-rtdb.firebaseio.com/faturas.json";
 
   fetch(url).then(response => response.json())
   .then(faturas => {
